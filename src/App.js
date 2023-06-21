@@ -1,22 +1,16 @@
-import logo from './logo.svg';
-import './App.scss';
 import { Reset } from 'styled-reset';
+import './App.scss';
+import MainPage from './pages/Mainpage';
+import React from 'react'
+
 
 function App() {
-	return (
-		<div className="App">
-			<Reset />
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-					Learn React
-				</a>
-			</header>
-		</div>
-	);
+  return (
+      <div className='App'>
+        <Reset/>
+        <MainPage/>
+      </div>
+  );
 }
 
 export default App;
