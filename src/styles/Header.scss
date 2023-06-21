@@ -1,0 +1,94 @@
+.TopBar {
+	display: flex;
+	height: 97px;
+	align-items: center;
+    .title {
+        width: 182px;
+        height: 59px;
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        margin-left: 28px;
+    }
+    .titletext {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+    .subtitletext {
+        margin-top: 8px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.searchbar {
+	width: 438px;
+	height: 36px;
+	border-radius: 30px;
+	background-color: #f0f0f0;
+	text-align: center;
+	line-height: 36px;
+	color: #a1a1a1;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	margin-left: 175px;
+	margin-right: 100px;
+    .searchinput {
+        width: 243px;
+        margin-right: 61px;
+        text-align: center;
+        border: none;
+        background-color: #f0f0f0;
+        font-size: 16px;
+        &::placeholder {
+            font-size: 16px;
+            color: #a1a1a1;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    .navigationarrow {
+        width: 24px;
+        height: 24px;
+        margin-right: 9px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.sidemenu {
+	display: flex;
+	width: 350px;
+	height: 100%;
+	align-items: center;
+	justify-content: end;
+    .ticketbox {
+        display: flex;
+        width: 120px;
+        height: 36px;
+        border: 1px solid #000000;
+        align-items: center;
+        border-radius: 5px;
+    }
+    .ticketbox:hover {
+        cursor: pointer;
+    }
+    .minilogo {
+        width: 40px;
+        margin-left: 32px;
+    }
+    .minilogo:hover {
+        cursor: pointer;
+    }
+    .bell {
+        width: 36px;
+        margin-left: 31px;
+    }
+    .bell:hover {
+        cursor: pointer;
+    }
+}
