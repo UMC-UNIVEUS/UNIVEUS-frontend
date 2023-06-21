@@ -3,21 +3,21 @@
 	--univ-blue: #2f3db8;
 	--univ-red: #ff0000;
 	--univ-background: #eaebf1;
-	--univ-black: #25313C;
+	--univ-black: #25313c;
 	--univ-white: #ffffff;
 
 	// font-size
 	--h1-size: 30px;
 	--h2-size: 24px;
 	--h3-size: 20px;
-	--default-size: 18px
-	--small-size: 16px
+	--default-size: 18px;
+	--small-size: 16px;
 
 	// font-weight
-	--bold-weight: 700
+	--bold-weight: 700;
 }
 
-body {
+.App {
 	width: 1280px;
 	margin: 0 auto;
 	font-family: 'Roboto', sans-serif;
