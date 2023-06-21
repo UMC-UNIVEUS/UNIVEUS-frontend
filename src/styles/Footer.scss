@@ -1,0 +1,27 @@
+.footer-body {
+	height: 270px;
+	padding-top: 55px;
+	font-size: 12px;
+	text-align: center;
+	color: #3b3b3b;
+	.instagram-logo {
+		width: 17px;
+		height: 17px;
+	}
+	.paragraph {
+		display: flex;
+		flex-direction: column;
+		margin: 10px 0;
+		span {
+			margin-top: 5px;
+		}
+	}
+	.link-paragraph {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		div {
+			padding: 10px;
+		}
+	}
+}
