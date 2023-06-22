@@ -1,0 +1,26 @@
+.Banner {
+    width: 1280px;
+    height: 324px;
+    display: flex;
+    align-items: center;
+}
+
+.slide {
+    width: 1280px;
+    height: 305px;
+}
+
+.slideimage {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination {
+    margin-bottom: 20px;
+    .swiper-pagination-bullet {
+        background-color: #b5b3b3;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: white;
+    }
+}
