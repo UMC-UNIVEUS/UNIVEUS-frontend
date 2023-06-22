@@ -1,4 +1,5 @@
 import '../styles/MyNav.scss';
+// import MenuBtn from './MenuBtn';
 export default function MyNav() {
 	return (
 		<div className="mynav-body">
@@ -10,8 +11,10 @@ export default function MyNav() {
 				<button>멤버쉽관리</button>
 			</div>
 			<div className="my-info">
+				<div className="info-img">
+					<img src="" alt="유저 이미지" />
+				</div>
 				<div className="info-left">
-					<div className="my-img"></div>
 					<div className="my-name">000님 안녕하세요:)</div>
 					<div className="my-dept">00학과 00학번</div>
 					<button className="my-membership">멤버쉽 혜택 보기</button>
@@ -27,16 +30,7 @@ export default function MyNav() {
 					</div>
 				</div>
 			</div>
-			<div className="my-group">
-				<div className="group-title">What's up?</div>
-				<div className="group-br"></div>
-				<div className="group-button">
-					<button>친구 만들기</button>
-					<button>스터디</button>
-					<button>취미모임</button>
-					<button>밥 같이 먹기</button>
-				</div>
-			</div>
+			{/* <MenuBtn /> */}
 		</div>
 	);
 }

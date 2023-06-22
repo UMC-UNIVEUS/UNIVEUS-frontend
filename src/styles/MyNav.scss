@@ -1,3 +1,22 @@
 .mynav-body {
-	background-color: aqua;
+	background-color: var(--univ-background);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 50px;
+	.my-list {
+		position: absolute;
+		left: 200px;
+		display: flex;
+		flex-direction: column;
+	}
+	.my-info {
+		background-color: var(--univ-white);
+		display: flex;
+		flex-direction: row;
+		.info-right {
+			display: flex;
+			flex-direction: row;
+		}
+	}
 }
