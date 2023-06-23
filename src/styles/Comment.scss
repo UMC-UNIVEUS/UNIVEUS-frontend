@@ -1,0 +1,51 @@
+.Comment {
+    width: 252px;
+    height: 232px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 10px 4px 0 rgba(0, 0, 0, 0.25);
+    margin-right: 32px;
+    .commenttext {
+        width: 226px;
+        height: 129px;
+        font-weight: bold;
+        font-size: 18px;
+        white-space: pre-line; // 개행문자 인식
+        line-height: 163.2%;
+        margin-left: 13px;
+        margin-top: 12px;
+    }
+    .commentwriter {
+        width: 165px;
+        height: 53px;
+        margin-top: 26px;
+        margin-left: 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .commentprofileimage {
+            width: 48px;
+            height: 48px;
+        }
+        .commentprofilebox {
+            width: 108px;
+            height: 100%;
+            margin-left: 9px;
+            color: #797979;
+            .commentwritername {
+                width: 100%;
+                height: 26px;
+                font-weight: 600; // semibold
+                font-size: 16px;
+                line-height: 26px;
+            }
+            .commentwriterinfo {
+                width: 97px;
+                height: 23px;
+                margin-top: 4px;
+                font-size: 14px;
+                line-height: 23px;
+            }
+        }   
+    }
+}
