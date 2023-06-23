@@ -2,7 +2,6 @@ import  '../styles/Comment.scss'
 import defaultProfileImage from '../assets/defaultprofile.png'
 
 
-
 const Comment = ({ text, name, info }) => {
     return (
         <div className="Comment">
