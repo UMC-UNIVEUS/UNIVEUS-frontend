@@ -1,0 +1,97 @@
+.MeetingCard {
+    width: 292px;
+    height: 361px;
+    border-radius: 0 0 5px 5px;
+    background-color: #eaebf1;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    .cardimage {
+        width: 100%;
+        height: 158px;
+        position: relative;
+    }
+    .dday {
+        width: 39px;
+        height: 25px;
+        color: white;
+        background-color: #fd6262;
+        border-radius: 15px;
+        text-align: center;
+        line-height: 25px;
+        font-size: 14px;
+        font-weight: bold;
+        position: absolute;
+        top: 8px;
+        right: 9px;
+        z-index: 2;
+    }
+    .participant {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 8px;
+    }
+    .meetingcardtitle {
+        //width: 280px;
+        // height: 25px;
+        margin-left: 13px;
+        margin-top: 14px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .meetinginfo {
+        width: 150px;
+        height: 44px;
+        //border: 1px solid orange;
+        margin-left: 13px;
+        margin-top: 20px;
+        .meetinginfoline {
+            height: 18px;
+            line-height: 18px;
+            font-size: 18px;
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    .meetingwriter {
+        width: 167px;
+        height: 52px;
+        margin-top: 17px;
+        margin-left: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .meetingprofileimage {
+            width: 40px;
+            height: 40px;
+        }
+        .meetingprofilebox {
+            width: 108px;
+            height: 100%;
+            margin-left: 8px;
+            color: #797979;
+            .meetingwritername {
+                width: 100%;
+                font-weight: 600; // semibold
+                font-size: 16px;
+                line-height: 26px;
+            }
+            .meetingwriterinfo {
+                width: 97px;
+                font-size: 12px;
+                line-height: 23px;
+            }
+        }   
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
