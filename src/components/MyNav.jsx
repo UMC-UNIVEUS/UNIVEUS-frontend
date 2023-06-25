@@ -1,6 +1,6 @@
 import '../styles/MyNav.scss';
 // import styled from 'styled-components';
-// import MenuBtn from './MenuBtn';
+import MenuBtn from './MenuBtn';
 
 export default function MyNav() {
 	return (
@@ -34,7 +34,7 @@ export default function MyNav() {
 					</div>
 				</div>
 			</div>
-			{/* <MenuBtn /> */}
+			<MenuBtn />
 		</div>
 	);
 }

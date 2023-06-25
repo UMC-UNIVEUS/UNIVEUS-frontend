@@ -1,3 +1,4 @@
+import '../styles/MenuBtn.scss';
 export default function MenuBtn() {
 	return (
 		<div className="menu-body">
