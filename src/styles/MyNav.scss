@@ -1,0 +1,95 @@
+.mynav-body {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 50px;
+	.my-list {
+		position: relative;
+		left: -40px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		.list-btn {
+			background: transparent;
+			border: none;
+			font-size: 16px;
+			padding: 7px 16px;
+			&:hover {
+				font-weight: 600;
+				text-decoration: underline;
+				text-decoration-thickness: 2px;
+				text-underline-offset: 6px;
+				cursor: pointer;
+				// border-bottom: 1px solid;
+			}
+		}
+	}
+	.my-info {
+		background-color: var(--univ-white);
+		display: flex;
+		flex-direction: row;
+		width: 700px;
+		height: 100px;
+		// position: absolute;
+		font-size: 16px;
+		margin-left: 20px;
+		.info-img {
+			width: 60px;
+			height: 60px;
+			border: 1px solid;
+			border-radius: 70%;
+			margin: 20px 25px;
+		}
+		.info-left {
+			margin: 20px;
+			font-size: 14px;
+			.my-dept {
+				font-size: 12px;
+				margin: 6px 0;
+			}
+			.my-membership {
+				background: var(--univ-blue);
+				border: none;
+				color: var(--univ-white);
+				font-size: 12px;
+				padding: 5px 11px;
+				border-radius: 8px;
+				&:hover {
+					cursor: pointer;
+				}
+			}
+		}
+		.info-right {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			font-size: 12px;
+			position: relative;
+			left: 180px;
+			hr {
+				height: 60%;
+				// color: #f0f0f0;
+				border: 1px solid #f0f0f0;
+			}
+			.my-report {
+				color: var(--univ-red);
+				margin-left: 26px;
+			}
+		}
+		.right-box {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 20px;
+			.title {
+				margin-bottom: 16px;
+				font-weight: 600;
+				font-size: 12px;
+			}
+			.cnt {
+				font-weight: 500;
+				font-size: 20px;
+			}
+		}
+	}
+}
