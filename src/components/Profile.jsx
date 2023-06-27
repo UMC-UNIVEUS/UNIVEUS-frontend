@@ -35,6 +35,10 @@ export default function Profile() {
 				</label>
 				<textarea name="selfintro" id="selfintro" cols="30" rows="10"></textarea>
 			</div>
+			<div className="pro-btns">
+				<button className="secession-btn">회원탈퇴</button>
+				<button className="save-btn">저장하기</button>
+			</div>
 		</>
 	);
 }
