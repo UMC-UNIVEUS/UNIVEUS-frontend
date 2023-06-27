@@ -1,14 +1,8 @@
-import styled from 'styled-components';
 import '../styles/MyNav.scss';
-import MenuBtn from './MenuBtn';
-
-const Body = styled.div`
-	background-color: var(--univ-background);
-`;
 
 export default function MyNav() {
 	return (
-		<Body>
+		<>
 			<div className="mynav-body">
 				<div className="my-list">
 					<button className="list-btn">내가 만든 유니버스</button>
@@ -24,7 +18,7 @@ export default function MyNav() {
 					<div className="info-left">
 						<div className="my-name">000님 안녕하세요:)</div>
 						<div className="my-dept">00학과 00학번</div>
-						<button className="my-membership">멤버쉽 혜택 보기</button>
+						<button className="my-membership">멤버쉽 혜택 보기{'>'}</button>
 					</div>
 					<div className="info-right">
 						<hr />
@@ -40,7 +34,6 @@ export default function MyNav() {
 					</div>
 				</div>
 			</div>
-			<MenuBtn />
-		</Body>
+		</>
 	);
 }

@@ -1,4 +1,6 @@
 .mynav-body {
+	background-color: var(--univ-background);
+	padding-bottom: 50px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -28,32 +30,37 @@
 		background-color: var(--univ-white);
 		display: flex;
 		flex-direction: row;
-		width: 700px;
-		height: 100px;
+		// width: 700px;
+		// height: 100px;
+		width: 849px;
+		height: 163px;
 		// position: absolute;
 		font-size: 16px;
 		margin-left: 20px;
 		.info-img {
-			width: 60px;
-			height: 60px;
+			width: 80px;
+			height: 80px;
 			border: 1px solid;
 			border-radius: 70%;
-			margin: 20px 25px;
+			margin: 45px 32px;
 		}
 		.info-left {
-			margin: 20px;
-			font-size: 14px;
+			margin: 52px 10px;
+			font-size: 18px;
 			.my-dept {
-				font-size: 12px;
+				font-size: 14px;
 				margin: 6px 0;
 			}
 			.my-membership {
-				background: var(--univ-blue);
+				padding: 0;
+				margin-top: 8px;
+				font-weight: 700;
+				background: transparent;
 				border: none;
-				color: var(--univ-white);
-				font-size: 12px;
-				padding: 5px 11px;
-				border-radius: 8px;
+				color: var(--univ-blue);
+				font-size: 16px;
+				// padding: 5px 11px;
+				// border-radius: 8px;
 				&:hover {
 					cursor: pointer;
 				}
@@ -65,7 +72,7 @@
 			align-items: center;
 			font-size: 12px;
 			position: relative;
-			left: 180px;
+			left: 250px;
 			hr {
 				height: 60%;
 				// color: #f0f0f0;
@@ -80,7 +87,7 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			margin: 20px;
+			margin: 30px;
 			.title {
 				margin-bottom: 16px;
 				font-weight: 600;
