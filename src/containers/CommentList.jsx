@@ -10,12 +10,13 @@ const dummyComment = {
 
 const CommentList = () => {
     return (
-        <div className="CommentList" style={{width: '1280px', height: '323px', backgroundColor: '#EAEBF1', marginTop: '29px'
+        <div className="CommentList" style={{width: '1280px', height: '323px', backgroundColor: '#EAEBF1',
+        marginTop: '29px', marginBottom: '56px'
        }}>
             <div style={{width: '50%',marginLeft: '61px', fontSize: '24px', 
             fontWeight: 'bold', paddingTop: '6px'}}>유니's Comment</div>
             <div style={{ height: '281px', display: 'flex', flexDirection: 'row', marginBottom: '49px', 
-                        marginTop: '6px', paddingLeft: '56px', 
+                        marginTop: '6px', paddingLeft: '56px',
                         overflow: 'auto', whiteSpace: 'nowrap'}}>
                 {comments.map((it) => (
                     <Comment key={it.id} {...it}/>
