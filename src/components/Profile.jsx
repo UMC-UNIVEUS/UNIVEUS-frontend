@@ -1,7 +1,13 @@
 import { useForm } from 'react-hook-form';
 import { useState, useRef } from 'react';
+import styled from 'styled-components';
 import profileLogo from '../assets/images/biglogo.png';
 import '../styles/Profile.scss';
+
+styled(profileLogo)`
+	width: 75px;
+	height: 75px;
+`;
 
 export default function Profile() {
 	const { register, handleSubmit } = useForm();
@@ -25,7 +31,7 @@ export default function Profile() {
 						<img src={imgFile ? imgFile : profileLogo} alt="프로필 이미지" />
 					</div>
 					<div className="right-btns">
-						<label className="modify-label-btn" htmlFor="mypage-profile-img">
+						<label className="modify-label-btn right-btn-style " htmlFor="mypage-profile-img">
 							프로필 수정
 						</label>
 						<input
@@ -36,25 +42,31 @@ export default function Profile() {
 							onChange={saveImgFile}
 							ref={imgRef}
 						/>
-						<button className="delete-btn">프로필 삭제</button>
+						<button className="delete-btn right-btn-style">프로필 삭제</button>
 					</div>
 				</div>
-				<hr />
+				<hr className="profile-hr" />
 				<div className="info-left">
-					<label className="left-name-label" htmlFor="mypage-profile-name">
-						닉네임
-					</label>
-					<input
-						type="text"
-						id="mypage-profile-name"
-						className="left-name-input"
-						placeholder="닉네임을 입력해주세요."
-					/>
-					<div className="left-gender">
-						<label className="left-gender-label">성별</label>
-						<label htmlFor="mypage-profile-male">남</label>
+					<div className="left-box">
+						<label className="left-label" htmlFor="mypage-profile-name">
+							닉네임
+						</label>
+						<input
+							type="text"
+							id="mypage-profile-name"
+							className="left-name-input"
+							placeholder="닉네임을 입력해주세요."
+						/>
+					</div>
+					<div className="left-box">
+						<label className="left-label">성별</label>
+						<label className="gender-label" htmlFor="mypage-profile-male">
+							남
+						</label>
 						<input type="radio" id="mypage-profile-male" name="drone" value="male" />
-						<label htmlFor="mypage-profile-female">여</label>
+						<label className="gender-label" htmlFor="mypage-profile-female">
+							여
+						</label>
 						<input type="radio" id="mypage-profile-female" name="drone" value="female" />
 					</div>
 				</div>
