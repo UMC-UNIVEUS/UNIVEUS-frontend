@@ -73,12 +73,16 @@ export default function Profile() {
 					</div>
 				</div>
 			</div>
-			<div className="pro-interest">
-				<label htmlFor="mypage-profile-interest">관심사</label>
+			<div className="pro-box">
+				<label className="pro-label" htmlFor="mypage-profile-interest">
+					관심사
+				</label>
 				<textarea name="interest" id="mypage-profile-interest" cols="30" rows="10"></textarea>
 			</div>
-			<div className="pro-selfintro">
-				<label htmlFor="mypage-profile-selfintro">자기소개</label>
+			<div className="pro-box">
+				<label className="pro-label" htmlFor="mypage-profile-selfintro">
+					자기소개
+				</label>
 				<textarea name="selfintro" id="mypage-profile-selfintro" cols="30" rows="10"></textarea>
 			</div>
 			<div className="pro-btns">

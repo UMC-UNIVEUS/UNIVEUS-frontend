@@ -81,4 +81,47 @@
 			}
 		}
 	}
+	.pro-box {
+		display: flex;
+		flex-direction: column;
+		margin-top: 43px;
+		label {
+			color: #000;
+			font-size: 14px;
+			font-weight: 600;
+			margin-bottom: 8px;
+		}
+		textarea {
+			width: 565px;
+			height: 103px;
+			border-radius: 10px;
+			border: 2px solid #eaebf1;
+			background: #fff;
+			margin-bottom: 44px;
+			// textarea 세줄 없애기
+			resize: none;
+		}
+	}
+	.pro-btns {
+		.secession-btn {
+			border-radius: 5px;
+			border: 1px solid #000;
+			background: #fff;
+			padding: 8px 16px;
+			cursor: pointer;
+			font-size: 16px;
+			font-weight: 700;
+			margin-right: 357px;
+		}
+		.save-btn {
+			color: #fff;
+			padding: 8px 16px;
+			border-radius: 5px;
+			border: 1px solid #2f3db8;
+			background: #2f3db8;
+			cursor: pointer;
+			font-size: 16px;
+			font-weight: 700;
+		}
+	}
 }
