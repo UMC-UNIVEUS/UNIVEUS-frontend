@@ -1,11 +1,17 @@
+import { useForm } from 'react-hook-form';
+
 export default function Profile() {
+	const { register, handleSubmit } = useForm();
 	return (
-		<>
+		<form onSubmit={handleSubmit((data) => alert(JSON.stringify(data)))}>
 			<div className="pro-privacy">
 				<div className="info-right">
 					<div className="right-img"></div>
 					<div className="right-btns">
-						<button className="modify-btn">프로필 수정</button>
+						<label className="modify-label-btn" htmlFor="mypage-profile-img">
+							프로필 수정
+						</label>
+						<input type="file" accept="image/*" id="mypage-profile-img" className="modify-input" />
 						<button className="delete-btn">프로필 삭제</button>
 					</div>
 				</div>
@@ -39,6 +45,6 @@ export default function Profile() {
 				<button className="secession-btn">회원탈퇴</button>
 				<button className="save-btn">저장하기</button>
 			</div>
-		</>
+		</form>
 	);
 }
