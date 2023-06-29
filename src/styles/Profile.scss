@@ -46,7 +46,38 @@
 		}
 		.info-left {
 			position: relative;
-			.left-box {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			.left-label {
+				font-size: 14px;
+				font-weight: 600;
+			}
+			.name-box {
+				margin-bottom: 16px;
+				display: flex;
+				flex-direction: column;
+				input {
+					width: 257px;
+					padding: 8px 16px;
+					border-radius: 5px;
+					border: 1px solid #2f3db8;
+					background: #f0f0f0;
+					margin-top: 6px;
+					&::placeholder {
+						color: rgba(0, 0, 0, 0.2);
+					}
+				}
+			}
+			.radio-box {
+				.gender-style {
+					margin-top: 8px;
+					color: #aaa;
+					font-size: 16px;
+				}
+				input {
+					margin-right: 18px;
+				}
 			}
 		}
 	}

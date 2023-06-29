@@ -47,7 +47,7 @@ export default function Profile() {
 				</div>
 				<hr className="profile-hr" />
 				<div className="info-left">
-					<div className="left-box">
+					<div className="name-box">
 						<label className="left-label" htmlFor="mypage-profile-name">
 							닉네임
 						</label>
@@ -58,16 +58,18 @@ export default function Profile() {
 							placeholder="닉네임을 입력해주세요."
 						/>
 					</div>
-					<div className="left-box">
-						<label className="left-label">성별</label>
-						<label className="gender-label" htmlFor="mypage-profile-male">
-							남
-						</label>
-						<input type="radio" id="mypage-profile-male" name="drone" value="male" />
-						<label className="gender-label" htmlFor="mypage-profile-female">
-							여
-						</label>
-						<input type="radio" id="mypage-profile-female" name="drone" value="female" />
+					<div className="radio-box">
+						<label className="radio-label left-label">성별</label>
+						<div className="radio-input">
+							<label className="gender-style gender-label" htmlFor="mypage-profile-male">
+								남
+							</label>
+							<input type="radio" className="gender-style" id="mypage-profile-male" name="drone" value="male" />
+							<label className="gender-style gender-label" htmlFor="mypage-profile-female">
+								여
+							</label>
+							<input type="radio" className="gender-style" id="mypage-profile-female" name="drone" value="female" />
+						</div>
 					</div>
 				</div>
 			</div>
