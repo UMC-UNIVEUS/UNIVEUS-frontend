@@ -1,7 +1,7 @@
 import './App.scss';
 import { Reset } from 'styled-reset';
-// import MainPage from './pages/Mainpage';
-// import MyPost from './pages/MyPost';
+import MainPage from './pages/Mainpage';
+import MyPost from './pages/MyPost';
 import MyProfile from './pages/MyProfile';
 import React from 'react';
 
@@ -10,8 +10,8 @@ function App() {
 		<div className="App">
 			<Reset />
 			{/* <MainPage /> */}
-			{/* <MyPost /> */}
-			<MyProfile />
+			<MyPost />
+			{/* <MyProfile /> */}
 		</div>
 	);
 }
