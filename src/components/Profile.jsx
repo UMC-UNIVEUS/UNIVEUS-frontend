@@ -42,6 +42,7 @@ export default function Profile() {
 							onChange={saveImgFile}
 							ref={imgRef}
 						/>
+						{/* DB연결후에 프로필 이미지 삭제 기능 추가 */}
 						<button className="delete-btn right-btn-style">프로필 삭제</button>
 					</div>
 				</div>

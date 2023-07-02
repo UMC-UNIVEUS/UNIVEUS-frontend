@@ -10,8 +10,8 @@ function App() {
 		<div className="App">
 			<Reset />
 			{/* <MainPage /> */}
-			<MyPost />
-			{/* <MyProfile /> */}
+			{/* <MyPost /> */}
+			<MyProfile />
 		</div>
 	);
 }
