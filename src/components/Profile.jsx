@@ -2,6 +2,7 @@ import { useForm } from 'react-hook-form';
 import { useState, useRef } from 'react';
 import styled from 'styled-components';
 import profileLogo from '../assets/images/biglogo.png';
+import Modal from './Modal';
 import '../styles/Profile.scss';
 
 styled(profileLogo)`
@@ -88,6 +89,7 @@ export default function Profile() {
 			</div>
 			<div className="pro-btns">
 				<button className="secession-btn">회원탈퇴</button>
+				<Modal content="안녕하세요" />
 				<input className="save-btn" type="submit" value={'저장하기'} />
 			</div>
 		</form>
