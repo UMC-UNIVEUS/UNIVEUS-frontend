@@ -5,15 +5,15 @@ import profileLogo from '../assets/images/biglogo.png';
 import Modal from './Modal';
 import '../styles/Profile.scss';
 
-styled(profileLogo)`
-	width: 75px;
-	height: 75px;
-`;
-
 export default function Profile() {
 	const { register, handleSubmit } = useForm();
 	const [imgFile, setImgFile] = useState('');
 	const imgRef = useRef();
+
+	// modal창 여닫기
+	const [isModalOpen, setIsModalOpen] = useState(false);
+	const openModal = () => setIsModalOpen(true);
+	const closeModal = () => setIsModalOpen(false);
 
 	// 이미지 업로드 input의 onChange
 	const saveImgFile = () => {
@@ -25,7 +25,7 @@ export default function Profile() {
 		};
 	};
 	return (
-		<form className="profile-form" onSubmit={handleSubmit((data) => alert(JSON.stringify(data)))}>
+		<form className="profile-form" onSubmit={handleSubmit((data) => console.log(JSON.stringify(data)))}>
 			<div className="pro-privacy">
 				<div className="info-right">
 					<div className="right-img">
@@ -61,7 +61,7 @@ export default function Profile() {
 						/>
 					</div>
 					<div className="radio-box">
-						<label className="radio-label left-label">성별</label>
+						<div className="radio-label left-label">성별</div>
 						<div className="radio-input">
 							<label className="gender-style gender-label" htmlFor="mypage-profile-male">
 								남
@@ -88,8 +88,17 @@ export default function Profile() {
 				<textarea name="selfintro" id="mypage-profile-selfintro" cols="30" rows="10"></textarea>
 			</div>
 			<div className="pro-btns">
-				<button className="secession-btn">회원탈퇴</button>
-				<Modal content="안녕하세요" />
+				<button className="secession-btn" onClick={openModal}>
+					회원탈퇴
+				</button>
+				<Modal
+					isOpen={isModalOpen}
+					closeModal={closeModal}
+					ynBtn={true}
+					title={'정말 탈퇴하시겠습니까?'}
+					content={'"탈퇴 후 재가입은 7일 후 가능하며 기존 멤버쉽 혜택은 사라집니다."'}
+				/>
+				{/* </Modal> */}
 				<input className="save-btn" type="submit" value={'저장하기'} />
 			</div>
 		</form>
