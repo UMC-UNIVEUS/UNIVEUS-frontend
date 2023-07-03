@@ -3,7 +3,7 @@ import logo from '../assets/images/biglogo.png';
 import closeBtn from '../assets/images/close-btn.png';
 
 // ynBtn={true|false}
-// true -> 네/아니오 버튼 | false -> 확인 버튼
+// true -> 네/아니오 버튼 | false -> 확인 버튼!
 // title={'타이틀로 넣을 글'}
 // content={'내용으로 넣을 글'}
 
