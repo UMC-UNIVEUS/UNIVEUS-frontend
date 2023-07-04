@@ -83,12 +83,12 @@ export default function UserProfile() {
 								id="report-etc"
 								cols="30"
 								rows="10"
+								maxLength="150"
+								placeholder="150자 이내로 작성해주세요."
 								className="etc-box"
 								onChange={onChangeEtc}
 								{...register('report-etc', {
-									maxLength: {
-										value: 150,
-									},
+									maxLength: 150,
 								})}
 							></textarea>
 						)}
