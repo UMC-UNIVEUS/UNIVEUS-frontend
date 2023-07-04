@@ -1,0 +1,56 @@
+.mynav-body {
+	.my-list {
+		display: none;
+	}
+}
+.user-profile {
+	margin-top: 73px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.up-box {
+		.up-title {
+			color: #000;
+			font-size: 14px;
+			font-weight: 700;
+			margin-bottom: 8px;
+		}
+		.up-content {
+			width: 688px;
+			height: 103px;
+			border-radius: 10px;
+			border: 2px solid #eaebf1;
+			background: #fff;
+			margin-bottom: 44px;
+			&.big-content {
+				height: 204px;
+			}
+		}
+	}
+	.report-btn {
+		font-weight: 700;
+		color: var(--univ-white);
+		border-radius: 5px;
+		background: var(--univ-blue);
+		border: 1px solid var(--univ-blue);
+		padding: 8px 16px;
+	}
+}
+
+.report-box {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 24px;
+	.report-radio {
+		margin-bottom: 19px;
+		.report-label {
+			margin-left: 10px;
+		}
+	}
+	.etc-box {
+		border-radius: 10px;
+		border: 1px solid #000;
+		resize: none;
+	}
+}

@@ -7,7 +7,7 @@ import closeBtn from '../assets/images/close-btn.png';
 // title={'타이틀로 넣을 글'}
 // content={'내용으로 넣을 글'}
 
-function Modal({ isOpen, closeModal, ynBtn, title, content }) {
+function Modal({ isOpen, closeModal, ynBtn, otherBtn1, otherBtn2, title, content }) {
 	return (
 		<div className="modal-back" style={{ display: isOpen ? 'block' : 'none' }}>
 			<div className="modal">
@@ -23,8 +23,8 @@ function Modal({ isOpen, closeModal, ynBtn, title, content }) {
 				</div>
 				<div className="modal-footer">
 					<div className="yn-btn" style={{ display: ynBtn ? 'block' : 'none' }}>
-						<button className="modal-btn modal-white-btn">네</button>
-						<button className="modal-btn modal-blue-btn">아니오</button>
+						<button className="modal-btn modal-white-btn">{otherBtn1 ? otherBtn1 : '네'}</button>
+						<button className="modal-btn modal-blue-btn">{otherBtn2 ? otherBtn2 : '아니오'}</button>
 					</div>
 					<button className="modal-btn modal-blue-btn" style={{ display: ynBtn ? 'none' : 'block' }}>
 						확인

@@ -1,20 +1,18 @@
 import TopBar from '../components/TopBar';
 import Footer from '../components/Footer';
 import MyNav from '../components/MyNav';
-import MenuBtn from '../components/MenuBtn';
-import MyPostList from '../containers/MyPostList';
+import UserProfile from '../components/UserProfile';
 import '../styles/MyPost.scss';
 
-const MyPost = () => {
+const MainPage = () => {
 	return (
 		<>
 			<TopBar />
 			<MyNav />
-			<MenuBtn className="menu-btn" />
-			<MyPostList />
+			<UserProfile />
 			<Footer />
 		</>
 	);
 };
 
-export default MyPost;
+export default MainPage;
