@@ -1,6 +1,5 @@
 import { useForm } from 'react-hook-form';
 import { useState, useRef } from 'react';
-import styled from 'styled-components';
 import profileLogo from '../assets/images/biglogo.png';
 import Modal from './Modal';
 import '../styles/Profile.scss';
@@ -98,7 +97,6 @@ export default function Profile() {
 					title={'정말 탈퇴하시겠습니까?'}
 					content={'"탈퇴 후 재가입은 7일 후 가능하며 기존 멤버쉽 혜택은 사라집니다."'}
 				/>
-				{/* </Modal> */}
 				<input className="save-btn" type="submit" value={'저장하기'} />
 			</div>
 		</form>
