@@ -11,11 +11,7 @@ export default function UserProfile() {
 	const closeModal = () => setIsModalOpen(false);
 
 	const [etc, setEtc] = useState(false);
-
-	const onChangeEtc = (e) => {
-		console.log(e.target);
-		setEtc(e.target);
-	};
+	// console.log(etc);
 
 	return (
 		<div className="user-profile">
@@ -86,7 +82,6 @@ export default function UserProfile() {
 								maxLength="150"
 								placeholder="150자 이내로 작성해주세요."
 								className="etc-box"
-								onChange={onChangeEtc}
 								{...register('report-etc', {
 									maxLength: 150,
 								})}
