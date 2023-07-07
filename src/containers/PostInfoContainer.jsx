@@ -7,6 +7,7 @@ import { styled } from 'styled-components'
 import Participant from '../components/Participant'
 import sendIcon from '../assets/sendicon.png'
 import UserComment from '../components/UserComment'
+import FloatingBar from '../components/FloatingBar'
 
 const classification = "밥 같이 먹기"
 const title = "돼지껍데기 먹으러 갈 사람~!"
@@ -73,6 +74,54 @@ const participants = [
 ]
 
 const commentList = [
+    {
+        name: '모임장',
+        department: '영어영문학과 17학번',
+        image: '../assets/defaultprofile.png',
+        comment: '테스트 댓글입니다.'
+    },
+    {
+        name: '모임장',
+        department: '영어영문학과 17학번',
+        image: '../assets/defaultprofile.png',
+        comment: '테스트 댓글입니다.'
+    },
+    {
+        name: '모임장',
+        department: '영어영문학과 17학번',
+        image: '../assets/defaultprofile.png',
+        comment: '테스트 댓글입니다.'
+    },
+    {
+        name: '모임장',
+        department: '영어영문학과 17학번',
+        image: '../assets/defaultprofile.png',
+        comment: '테스트 댓글입니다.'
+    },
+    {
+        name: '모임장',
+        department: '영어영문학과 17학번',
+        image: '../assets/defaultprofile.png',
+        comment: '테스트 댓글입니다.'
+    },
+    {
+        name: '모임장',
+        department: '영어영문학과 17학번',
+        image: '../assets/defaultprofile.png',
+        comment: '테스트 댓글입니다.'
+    },
+    {
+        name: '모임장',
+        department: '영어영문학과 17학번',
+        image: '../assets/defaultprofile.png',
+        comment: '테스트 댓글입니다.'
+    },
+    {
+        name: '모임장',
+        department: '영어영문학과 17학번',
+        image: '../assets/defaultprofile.png',
+        comment: '테스트 댓글입니다.'
+    },
     {
         name: '모임장',
         department: '영어영문학과 17학번',
@@ -154,7 +203,7 @@ const PostInfoContainer = () => {
                     <img src={sendIcon} alt='' className="sendicon" />
                 </div>
             </div>
-            <div style={{marginBottom: '200px'}}>
+            <div style={{marginBottom: '100px'}}>
                 {commentList.map(it => 
                     <UserComment image={it.image} name={it.name} department={it.department} comment={it.comment}/>
                 )}
