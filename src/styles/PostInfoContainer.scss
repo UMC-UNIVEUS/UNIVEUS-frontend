@@ -1,0 +1,158 @@
+.PostInfoContainer {
+    border-top: 1px solid var(--univ-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.classification {
+    background: var(--univ-white);
+	border: 1px solid var(--univ-blue);
+    color: var(--univ-blue);
+	font-size: 16px;
+	padding: 4px 16px;
+	border-radius: 999px;
+    font-weight: 700;
+    margin-top: 23px;
+}
+
+.titletext {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.meetinginfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.participant {
+    display: flex;
+    align-items: center;
+    margin-left: 19px;
+}
+
+.postinfobar {
+    width: 815px;
+    height: 41px;
+    margin-top: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.meetingwriter {
+    width: 148x;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .meetingprofileimage {
+        width: 35px;
+        height: 35px;
+    }
+    .meetingprofilebox {
+        width: 108px;
+        height: 30px;
+        margin-left: 8px;
+        color: var(--univ-black);
+        .meetingwritername {
+            width: 100%;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 14px;
+        }
+        .meetingwriterinfo {
+            margin-top: 6px;
+            width: 97px;
+            font-size: 10px;
+            line-height: 10px;
+        }
+    }
+}
+
+.dateinfo {
+    width: 224px;
+    height: 41px;
+    border-left: 1px solid var(--univ-black);
+    font-size: 14px;
+    padding-left: 16px;
+}
+
+.classification {
+    background: var(--univ-white);
+	border: 1px solid var(--univ-blue);
+    color: var(--univ-blue);
+	font-size: 16px;
+	padding: 4px 16px;
+	border-radius: 999px;
+    font-weight: 700;
+    margin-top: 23px;
+}
+
+.meetingstatus {
+    background: var(--univ-white);
+	border: 1px solid #ff0000;
+    color: #ff0000;
+	font-size: 16px;
+	padding: 8px 16px;
+	border-radius: 999px;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.postImageList {
+    width: 815px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: auto;
+    white-space: nowrap;
+    gap: 20px;
+}
+
+.postcontent {
+    width: 815px;
+    white-space: pre-line;
+    word-break: keep-all;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 48px;
+}
+
+.commentwritebox {
+    width: 806px;
+    height: 34px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 0 1px var(--univ-black);
+    margin-top: 16px;
+    margin-left: 10px;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.commentinput {
+    width: 740px;
+    border: none;
+    font-size: 14px;
+    height: 14px;
+}
+
+.commentinput:focus {
+    outline: none;
+}
+
+.sendicon {
+    width: 30px;
+    height: 16px;
+    margin-left: 12px;
+}
+
+.sendicon:hover {
+    cursor: pointer;
+}

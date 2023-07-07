@@ -1,0 +1,41 @@
+.Participant {
+    width: 161px;
+    height: 48px;
+    border-radius: 5px;
+    // border: 1px solid red;
+    white-space: pre-line;
+    box-shadow: inset 0 0 0 1px #dedede;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.participantprofileimage {
+    width: 35px;
+    height: 35px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+.participantprofilebox {
+    width: 108px;
+    height: 30px;
+    margin-left: 8px;
+    color: var(--univ-black);
+}
+
+.participantwritername {
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.participantwriterinfo {
+    margin-top: 6px;
+    width: 97px;
+    font-size: 10px;
+    line-height: 10px;
+}
+
