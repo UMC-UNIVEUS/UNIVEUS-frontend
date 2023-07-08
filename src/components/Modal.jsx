@@ -17,7 +17,9 @@ function Modal({ isOpen, closeModal, ynBtn, otherBtn1, otherBtn2, title, content
 				<div className="modal-body">
 					<img className="modal-logo" src={logo} alt="UNIVE:US logg" />
 					<div className="modal-content">
-						<div className="content-title">{title}</div>
+						<div className="content-title" style={{ whiteSpace: 'pre-wrap' }}>
+							{title}
+						</div>
 						{content}
 					</div>
 				</div>
