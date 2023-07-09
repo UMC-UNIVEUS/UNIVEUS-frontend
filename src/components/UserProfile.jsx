@@ -1,4 +1,3 @@
-import $ from 'jquery';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import '../styles/UserProfile.scss';
@@ -15,24 +14,23 @@ export default function UserProfile() {
 
 	// 글자수 세기 (useState로 구현하려 했으나, e.tartget.value 안됨...)
 
-	// const [byte, setByte] = useState(0)
-	// const countByte = (e) => {
-	//   setByte(
-	//   e.target.value.replace(/[\0-\x7f]|([0-\u07ff]|(.))/g, "$&$1$2").length
-	//   );
-	// };
+	const [byte, setByte] = useState('');
+	const countByte = (e) => {
+		// setByte(e.target.value.replace(/[\0-\x7f]|([0-\u07ff]|(.))/g, '$&$1$2').length);
+		setByte(e.target.value);
+	};
 
-	// jquery로 하려는데도 안됨... 뭐야 도대체...?@?@?@???
-	// 작동됐다가 새로고침하면 작동 안됨... ㅋ..
-	$('#report-etc').keyup(function (e) {
-		let content = $(this).val();
+	// // jquery로 하려는데도 안됨... 뭐야 도대체...?@?@?@???
+	// // 작동됐다가 새로고침하면 작동 안됨... ㅋ..
+	// $('#report-etc').keyup(function (e) {
+	// 	let content = $(this).val();
 
-		if (content.length === 0 || content === '') {
-			$('.byte-box').text('0/150');
-		} else {
-			$('.byte-box').text(content.length + '/150');
-		}
-	});
+	// 	if (content.length === 0 || content === '') {
+	// 		$('.byte-box').text('0/150');
+	// 	} else {
+	// 		$('.byte-box').text(content.length + '/150');
+	// 	}
+	// });
 
 	return (
 		<div className="user-profile">
@@ -104,11 +102,12 @@ export default function UserProfile() {
 									maxLength="150"
 									placeholder="사유를 입력해주세요."
 									className="etc-box"
+									onChange={countByte}
 									{...register('report-etc', {
 										maxLength: 150,
 									})}
 								></textarea>
-								<span className="byte-box">0/150</span>
+								<span className="byte-box">{byte.length}/150</span>
 							</>
 						)}
 					</form>
