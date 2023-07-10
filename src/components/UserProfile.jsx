@@ -1,4 +1,3 @@
-import $ from 'jquery';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import '../styles/UserProfile.scss';
@@ -11,13 +10,11 @@ export default function UserProfile() {
 	const openModal = () => setIsModalOpen(true);
 	const closeModal = () => setIsModalOpen(false);
 
+	// Modal의 기타 checkBox
 	const [etc, setEtc] = useState(false);
 
-	const [value, setValue] = useState('');
-
-	const handleChange = (event) => {
-		setValue(event.target.value);
-	};
+	// 글자수 세기
+	const [byte, setByte] = useState(0);
 
 	return (
 		<div className="user-profile">
@@ -89,9 +86,14 @@ export default function UserProfile() {
 									maxLength="150"
 									placeholder="사유를 입력해주세요."
 									className="etc-box"
-									onChange={handleChange}
+									{...register('report-etc', {
+										onChange: (e) => {
+											setByte(e.target.value.length);
+										},
+										maxLength: 150,
+									})}
 								></textarea>
-								<span className="byte-box">{value.length}/150</span>
+								<span className="byte-box">{byte}/150</span>
 							</>
 						)}
 					</form>
