@@ -4,6 +4,7 @@ import MainPage from './pages/Mainpage';
 import MyPost from './pages/MyPost';
 import MyProfile from './pages/MyProfile';
 import UserProfile from './pages/UserProfile';
+import Verification from './pages/Verification';
 import React from 'react';
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
 			{/* <MainPage /> */}
 			{/* <MyPost /> */}
 			{/* <MyProfile /> */}
-			<UserProfile />
+			{/* <UserProfile /> */}
+			<Verification />
 		</div>
 	);
 }
