@@ -1,0 +1,90 @@
+.self-verification {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 76px;
+	.title {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 76px;
+		.main-title {
+			text-align: center;
+			font-size: 24px;
+			font-weight: 700;
+		}
+		.sub-title {
+			font-size: 14px;
+			margin-top: 14px;
+			font-weight: 500;
+		}
+	}
+	.verification-form {
+		.form-box {
+			margin-bottom: 27px;
+			display: flex;
+			flex-direction: column;
+			.form-title {
+				font-size: 14px;
+				font-weight: 600;
+				margin-bottom: 4px;
+			}
+			.verify-text {
+				border-radius: 8px;
+				border: 1px solid #2f3db8;
+				background: #fff;
+				height: 35px;
+				width: 257px;
+				&::placeholder {
+					color: rgba(0, 0, 0, 0.3);
+					padding: 10px;
+				}
+			}
+			.form-input {
+				.verity-email-address {
+					font-size: 16px;
+					font-weight: 500;
+					margin-left: 10px;
+				}
+				.form-btn {
+					border-radius: 5px;
+					border: 1px solid var(--univ-blue);
+					background: var(--univ-blue);
+					padding: 7px;
+					color: var(--univ-white);
+					font-size: 14px;
+					margin-left: 19px;
+					cursor: pointer;
+				}
+			}
+			.form-sub-title {
+				color: #bababa;
+				font-size: 10px;
+				font-weight: 400;
+				margin-top: 3px;
+			}
+			.form-radio {
+				color: #aaa;
+				font-size: 16px;
+				font-weight: 600;
+				label {
+					margin-right: 5px;
+				}
+				input {
+					margin-right: 18px;
+				}
+			}
+		}
+	}
+	.submit-btn {
+		border-radius: 5px;
+		border: 1px solid var(--univ-blue);
+		background: var(--univ-blue);
+		padding: 7px;
+		color: var(--univ-white);
+		font-size: 15px;
+		margin-top: 28px;
+		cursor: pointer;
+		margin-left: 120px;
+	}
+}
