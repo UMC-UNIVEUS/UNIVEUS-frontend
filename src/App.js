@@ -13,9 +13,9 @@ function App() {
 			<Reset />
 			{/* <MainPage /> */}
 			{/* <MyPost /> */}
-			{/* <MyProfile /> */}
+			<MyProfile />
 			{/* <UserProfile /> */}
-			<Verification />
+			{/* <Verification /> */}
 		</div>
 	);
 }

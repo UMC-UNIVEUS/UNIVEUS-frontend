@@ -67,16 +67,31 @@
 					&::placeholder {
 						color: rgba(0, 0, 0, 0.2);
 					}
+					&:focus {
+						background-color: var(--univ-white);
+					}
 				}
 			}
 			.radio-box {
-				.gender-style {
-					margin-top: 8px;
-					color: #aaa;
-					font-size: 16px;
-				}
-				input {
-					margin-right: 18px;
+				.radio-group {
+					display: flex;
+					flex-direction: row;
+					.radio-input {
+						.gender-style {
+							margin-top: 8px;
+							color: #aaa;
+							font-size: 16px;
+						}
+						input {
+							margin-right: 18px;
+							/* input checked시 label 색상변경 안됨*/
+							/* font 관련 스타일만 안 먹는 듯*/
+							&[name='drone']:checked {
+								color: #0028fb;
+								margin-left: 50px;
+							}
+						}
+					}
 				}
 			}
 		}
