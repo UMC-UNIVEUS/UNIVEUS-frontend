@@ -67,16 +67,35 @@
 					&::placeholder {
 						color: rgba(0, 0, 0, 0.2);
 					}
+					&:focus {
+						background-color: var(--univ-white);
+					}
+					&:valid {
+						background-color: var(--univ-white);
+					}
 				}
 			}
 			.radio-box {
-				.gender-style {
-					margin-top: 8px;
-					color: #aaa;
-					font-size: 16px;
-				}
-				input {
-					margin-right: 18px;
+				.radio-group {
+					display: flex;
+					flex-direction: row;
+					.radio-input {
+						margin-right: 18px;
+						.gender-style {
+							margin-top: 8px;
+							color: #aaa;
+							font-size: 16px;
+						}
+						input {
+							margin-right: 8px;
+							&:checked {
+								accent-color: var(--univ-blue);
+							}
+							&:checked + label {
+								color: var(--univ-black);
+							}
+						}
+					}
 				}
 			}
 		}
