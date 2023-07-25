@@ -80,18 +80,19 @@
 					display: flex;
 					flex-direction: row;
 					.radio-input {
+						margin-right: 18px;
 						.gender-style {
 							margin-top: 8px;
 							color: #aaa;
 							font-size: 16px;
 						}
 						input {
-							margin-right: 18px;
-							/* input checked시 label 색상변경 안됨*/
-							/* font 관련 스타일만 안 먹는 듯*/
-							&[name='drone']:checked {
-								color: #0028fb;
-								margin-left: 50px;
+							margin-right: 8px;
+							&:checked {
+								accent-color: var(--univ-blue);
+							}
+							&:checked + label {
+								color: var(--univ-black);
 							}
 						}
 					}

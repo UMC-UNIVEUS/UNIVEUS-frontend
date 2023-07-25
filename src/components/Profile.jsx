@@ -65,16 +65,16 @@ export default function Profile() {
 						<div className="radio-label left-label">성별</div>
 						<div className="radio-group">
 							<div className="radio-input">
+								<input type="radio" className="gender-style" id="mypage-profile-male" name="gender" value="male" />
 								<label className="gender-style gender-label" htmlFor="mypage-profile-male">
 									남
 								</label>
-								<input type="radio" className="gender-style" id="mypage-profile-male" name="drone" value="male" />
 							</div>
 							<div className="radio-input">
+								<input type="radio" className="gender-style" id="mypage-profile-female" name="gender" value="female" />
 								<label className="gender-style gender-label" htmlFor="mypage-profile-female">
 									여
 								</label>
-								<input type="radio" className="gender-style" id="mypage-profile-female" name="drone" value="female" />
 							</div>
 						</div>
 					</div>
