@@ -70,6 +70,9 @@
 					&:focus {
 						background-color: var(--univ-white);
 					}
+					&:valid {
+						background-color: var(--univ-white);
+					}
 				}
 			}
 			.radio-box {
