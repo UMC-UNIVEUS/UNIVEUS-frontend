@@ -58,7 +58,7 @@ export default function Profile() {
 							id="mypage-profile-name"
 							className="left-name-input"
 							placeholder="닉네임을 입력해주세요."
-							required="required"
+							required
 						/>
 					</div>
 					<div className="radio-box">

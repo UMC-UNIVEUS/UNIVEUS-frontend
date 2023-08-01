@@ -24,6 +24,11 @@
 			margin-bottom: 27px;
 			display: flex;
 			flex-direction: column;
+			input[type='number']::-webkit-outer-spin-button,
+			input[type='number']::-webkit-inner-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+			}
 			.form-title {
 				font-size: 14px;
 				font-weight: 600;
@@ -41,11 +46,12 @@
 				}
 			}
 			.form-input {
-				.verity-email-address {
-					font-size: 16px;
-					font-weight: 500;
-					margin-left: 10px;
-				}
+				// .verity-email-address {
+				// 	position: absolute;
+				// 	font-size: 10px;
+				// 	font-weight: 500;
+				// 	margin-left: 10px;
+				// }
 				.form-btn {
 					border-radius: 5px;
 					border: 1px solid var(--univ-blue);
@@ -57,11 +63,12 @@
 					cursor: pointer;
 				}
 			}
-			.form-sub-title {
-				color: #bababa;
+			.form-error {
+				color: var(--univ-red);
 				font-size: 10px;
 				font-weight: 400;
 				margin-top: 3px;
+				margin-top: 8px;
 			}
 			.form-radio {
 				color: #aaa;
@@ -71,7 +78,13 @@
 					margin-right: 5px;
 				}
 				input {
-					margin-right: 18px;
+					margin-right: 10px;
+					&:checked {
+						accent-color: var(--univ-blue);
+					}
+					&:checked + label {
+						color: var(--univ-black);
+					}
 				}
 			}
 		}
